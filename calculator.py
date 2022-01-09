@@ -38,7 +38,9 @@ def input_number(prompt):
 # Keep going around the loop until the user chooses 5 to quit
 
 while True:
-    print
+
+    num1 = input_number("Enter first number: ")
+    num2 = input_number("Enter second number: ")
     print("Select operation.")
     print("1.Add")
     print("2.Subtract")
@@ -50,17 +52,16 @@ while True:
 
     # Do they want to quit?
 
-    if choice == 5:
-        break
+    
 
-    num1 = input_number("Enter first number: ")
-    num2 = input_number("Enter second number: ")
+    
 
     if choice == 1:
         print(num1,"+",num2,"=", add(num1,num2))
 
     elif choice == 2:
-        print(num1,"-",num2,"=", subtract(num1,num2))
+        print(num1,"-",num2,"=",subtract( 
+        num1,num2))
 
     elif choice == 3:
         print(num1,"*",num2,"=", multiply(num1,num2))
@@ -68,5 +69,7 @@ while True:
     elif choice == 4:
         print(num1,"/",num2,"=", divide(num1,num2))
 
+    elif choice == 5:
+        break
     else:
         print("%s - Invalid input" % choice)
