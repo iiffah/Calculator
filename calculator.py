@@ -74,4 +74,3 @@ while True:
     else:
         print("%s - Invalid input" % choice)
     
-print("arif")
